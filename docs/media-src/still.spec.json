@@ -1,0 +1,46 @@
+{
+  "title": "stock_analysis.py",
+  "cwd": "/tmp/dsa-demo",
+  "width": 940,
+  "rows": 29,
+  "fontSize": 14,
+  "wrap": 106,
+  "highlight": [
+    {
+      "re": "^Sized for your risk",
+      "cls": "yellow"
+    },
+    {
+      "re": "^\\*\\*Reference plan",
+      "cls": "yellow"
+    },
+    {
+      "re": "^\\| (Trend|Momentum|Volume|Relative strength|Extension|Market regime) \\| \\+[1-9]",
+      "cls": "green"
+    },
+    {
+      "re": "^\\| (Trend|Momentum|Volume|Relative strength|Extension|Market regime) \\| -[1-9]",
+      "cls": "red"
+    },
+    {
+      "re": "[Bb]earish",
+      "cls": "red"
+    },
+    {
+      "re": "[Bb]ullish",
+      "cls": "green"
+    },
+    {
+      "re": "^#{1,2} ",
+      "cls": "bold"
+    }
+  ],
+  "steps": [
+    {
+      "note": "# A bearish ticker gets no plan, only the reasons. Same file, one ticker."
+    },
+    {
+      "cmd": "python3 stock_analysis.py analyze NVDA"
+    }
+  ]
+}

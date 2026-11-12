@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "daily-stock-analysis"
+version = "1.0.0"
+description = "US stock analysis in one command: trend, momentum, relative strength, market regime and a risk-sized trade plan. No dependencies."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.10"
+authors = [{ name = "FinnTech3" }]
+keywords = ["stocks", "technical-analysis", "us-equities", "trading", "ai-agent-skill"]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.5"]
+
+[project.scripts]
+dsa = "stock_analysis:main"
+
+[project.urls]
+Homepage = "https://github.com/FinnTech3/Daily_StocK_Analysis"
+
+[tool.setuptools]
+py-modules = ["stock_analysis"]
+package-dir = { "" = "agensi/daily-us-stock-analysis/scripts" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["agensi/daily-us-stock-analysis/scripts", "tools"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.ruff.lint.per-file-ignores]
+"tools/**" = ["E501"]
+"tests/**" = ["E501"]
+"docs/**" = ["E501"]

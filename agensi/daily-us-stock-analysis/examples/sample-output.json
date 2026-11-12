@@ -1,0 +1,215 @@
+{
+  "regime": {
+    "label": "neutral",
+    "points": 0,
+    "reasons": [
+      "S&P 500 (SPY) above its 200-day average",
+      "50-day average above the 200-day",
+      "20-day volatility 22% a year"
+    ],
+    "spy_close": 754.37
+  },
+  "analyses": [
+    {
+      "symbol": "AAPL",
+      "as_of": "2026-11-13",
+      "close": 356.27,
+      "score": 80,
+      "bias": "Bullish",
+      "regime": "neutral",
+      "factors": [
+        {
+          "name": "Trend",
+          "points": 40,
+          "why": "above 20-day (346.15); above 50-day (339.04); above 200-day (301.25)"
+        },
+        {
+          "name": "Momentum",
+          "points": 25,
+          "why": "MACD histogram positive and rising; RSI 61 (healthy)"
+        },
+        {
+          "name": "Volume",
+          "points": 0,
+          "why": "no unusual participation"
+        },
+        {
+          "name": "Relative strength",
+          "points": 15.0,
+          "why": "+16.6% vs S&P 500 -2.4% over 63 sessions"
+        }
+      ],
+      "levels": {
+        "support_20d": 325.33,
+        "resistance_20d": 360.83,
+        "high_52w": 360.83,
+        "low_52w": 243.42,
+        "sma_20": 346.15,
+        "sma_50": 339.04,
+        "sma_200": 301.25,
+        "atr_14": 8.22
+      },
+      "plan": {
+        "entry": 356.27,
+        "stop": 339.84,
+        "target_1": 380.92,
+        "target_2": 405.57,
+        "risk_per_share": 16.43,
+        "shares": 15,
+        "position_value": 5344.05,
+        "note": "Entry at the last close."
+      },
+      "no_plan_reason": null,
+      "warnings": []
+    },
+    {
+      "symbol": "MSFT",
+      "as_of": "2026-11-13",
+      "close": 523.88,
+      "score": 24,
+      "bias": "Lean bullish",
+      "regime": "neutral",
+      "factors": [
+        {
+          "name": "Trend",
+          "points": 24,
+          "why": "below 20-day (529.39); above 50-day (519.00); above 200-day (441.42)"
+        },
+        {
+          "name": "Momentum",
+          "points": -15,
+          "why": "MACD histogram negative and falling; RSI 49 (neutral)"
+        },
+        {
+          "name": "Volume",
+          "points": 0,
+          "why": "no unusual participation"
+        },
+        {
+          "name": "Relative strength",
+          "points": 15.0,
+          "why": "+9.1% vs S&P 500 -2.4% over 63 sessions"
+        }
+      ],
+      "levels": {
+        "support_20d": 504.96,
+        "resistance_20d": 559.15,
+        "high_52w": 559.15,
+        "low_52w": 349.2,
+        "sma_20": 529.39,
+        "sma_50": 519.0,
+        "sma_200": 441.42,
+        "atr_14": 15.22
+      },
+      "plan": {
+        "entry": 523.88,
+        "stop": 493.44,
+        "target_1": 569.53,
+        "target_2": 615.19,
+        "risk_per_share": 30.44,
+        "shares": 8,
+        "position_value": 4191.04,
+        "note": "Entry at the last close."
+      },
+      "no_plan_reason": null,
+      "warnings": []
+    },
+    {
+      "symbol": "NVDA",
+      "as_of": "2026-11-13",
+      "close": 162.85,
+      "score": -65,
+      "bias": "Bearish",
+      "regime": "neutral",
+      "factors": [
+        {
+          "name": "Trend",
+          "points": -30,
+          "why": "below 20-day (198.69); below 50-day (214.65); below 200-day (204.19)"
+        },
+        {
+          "name": "Momentum",
+          "points": -10,
+          "why": "MACD histogram negative and rising; RSI 25 (oversold)"
+        },
+        {
+          "name": "Volume",
+          "points": -10,
+          "why": "1.9x average volume on a down day"
+        },
+        {
+          "name": "Relative strength",
+          "points": -15.0,
+          "why": "-27.6% vs S&P 500 -2.4% over 63 sessions"
+        }
+      ],
+      "levels": {
+        "support_20d": 148.8,
+        "resistance_20d": 222.19,
+        "high_52w": 243.37,
+        "low_52w": 148.8,
+        "sma_20": 198.69,
+        "sma_50": 214.65,
+        "sma_200": 204.19,
+        "atr_14": 9.98
+      },
+      "plan": null,
+      "no_plan_reason": "the bias is bearish. Wait for price to reclaim its averages",
+      "warnings": []
+    },
+    {
+      "symbol": "TSLA",
+      "as_of": "2026-11-13",
+      "close": 390.22,
+      "score": 40,
+      "bias": "Lean bullish",
+      "regime": "neutral",
+      "factors": [
+        {
+          "name": "Trend",
+          "points": 30,
+          "why": "above 20-day (385.36); above 50-day (374.74); above 200-day (382.73)"
+        },
+        {
+          "name": "Momentum",
+          "points": -5,
+          "why": "MACD histogram negative and rising; RSI 54 (neutral)"
+        },
+        {
+          "name": "Volume",
+          "points": 0,
+          "why": "no unusual participation"
+        },
+        {
+          "name": "Relative strength",
+          "points": 15.0,
+          "why": "+15.0% vs S&P 500 -2.4% over 63 sessions"
+        }
+      ],
+      "levels": {
+        "support_20d": 338.15,
+        "resistance_20d": 414.23,
+        "high_52w": 498.83,
+        "low_52w": 297.38,
+        "sma_20": 385.36,
+        "sma_50": 374.74,
+        "sma_200": 382.73,
+        "atr_14": 16.71
+      },
+      "plan": {
+        "entry": 390.22,
+        "stop": 356.8,
+        "target_1": 440.35,
+        "target_2": 490.48,
+        "risk_per_share": 33.42,
+        "shares": 7,
+        "position_value": 2731.54,
+        "note": "Entry at the last close."
+      },
+      "no_plan_reason": null,
+      "warnings": []
+    }
+  ],
+  "errors": {},
+  "disclaimer": "For education and research only. Not financial advice. Indicators describe the past and do not predict returns. Prices come from Nasdaq's public data, are not adjusted for dividends, and can be delayed or wrong."
+}

@@ -1,0 +1,26 @@
+{
+  "title": "stock_analysis.py",
+  "cwd": "/tmp/dsa-demo",
+  "width": 940,
+  "rows": 28,
+  "fontSize": 14,
+  "wrap": 106,
+  "highlight": [
+    {"re": "^Sized for your risk", "cls": "yellow"},
+    {"re": "^\\*\\*Reference plan", "cls": "yellow"},
+    {"re": "^\\| (Trend|Momentum|Volume|Relative strength|Extension|Market regime) \\| \\+[1-9]", "cls": "green"},
+    {"re": "^\\| (Trend|Momentum|Volume|Relative strength|Extension|Market regime) \\| -[1-9]", "cls": "red"},
+    {"re": "[Bb]earish", "cls": "red"},
+    {"re": "[Bb]ullish", "cls": "green"},
+    {"re": "^#{1,2} ", "cls": "bold"}
+  ],
+  "steps": [
+    {"note": "# Four tickers, one command. $25,000 account, risking 1% a trade. Live Nasdaq prices, no API key."},
+    {"cmd": "python3 stock_analysis.py analyze AAPL MSFT NVDA TSLA --account 25000", "maxLines": 14, "hold": 1.2},
+    {"note": "# NVDA scores -65, so it gets no plan. Only Bullish and Lean bullish setups get one."},
+    {"pause": 1600},
+    {"clear": true},
+    {"note": "# Why is AAPL bullish? Every point has a named reason, and the plan is sized to the account."},
+    {"cmd": "python3 stock_analysis.py analyze AAPL --account 25000", "maxLines": 25, "hold": 3.0}
+  ]
+}
